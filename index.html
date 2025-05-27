@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hacking Lab | CTF</title>
+  </head>
+  <body>
+    
+    <nav>
+      <div class="nav__bar">
+        <a href="#"><span class="logo nav__logo">H</span>ACKING LAB</a>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#service">Sobre</a></li>
+        <li><a href="#about">Regras</a></li>
+        <li><a href="#portfolio">Lab</a></li>
+        <li><a href="#contact" class="btn">Inscrição</a></li>
+      </ul>
+      <a href="#contact" class="btn btn__large">Inscrição</a>
+    </nav>
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/1 header.jpg" alt="header" />
+      </div>
+      <div class="header__content">
+        <div>
+          <h1>Hacking Lab<br />Prática</h1>
+        </div>
+        <p class="section__description"  class="mt-6 text-sm italic text-gray-300">
+          Onde mentes curiosas desafiam o impossível.<br />
+          Um concurso de hacking ético para quem quer ir além do código,
+          Criatividade extrema, Impacto real.
+        </p>
+        <div class="header__btn">
+          <button class="btn" ><a href="#about" class="btn" > Saber Mais </a> </button>
+        </div>
+      </div>
+    </header>
+
+<!-- Relógio em Tempo Real -->
+<section class="countdown-section">
+  <div class="countdown-container">
+    <h2>FALTAM:</h2>
+    <div class="countdown">
+      <div class="time-box">
+        <span id="days">00</span>
+        <small>Dias</small>
+      </div>
+      <div class="time-box">
+        <span id="hours">00</span>
+        <small>Horas</small>
+      </div>
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <small>Min</small>
+      </div>
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <small>Seg</small>
+      </div>
+    </div>
+    <p class="event-info"> Data: 24 de Junho de 2025 — Início: 14h00</p>
+  </div>
+</section>
+
+
+
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/bg.png" alt="bg" class="about__bg-1" />
+        <img src="assets/bg.png" alt="bg" class="about__bg-2" />
+        <img src="assets/about.jpg" alt="about" class="about__img" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">Sobre a Competição</h2>
+        <p class="section__description">
+          <strong>O Hacking Lab Prática</strong> não é só um concurso. É um campo de treino para mentes criativas.
+          Criado para jovens curiosos, apaixonados por tecnologia e prontos para quebrar padrões, 
+          o Hack Lab surge como um movimento de transformação através do hacking ético.
+
+          Durante 72 horas intensas, equipas irão enfrentar desafios reais ligados à segurança digital, inteligência artificial, 
+          programação e resolução de problemas criativos. Mas o verdadeiro objetivo não é apenas vencer — é aprender, colaborar e inovar.
+          <br>
+          <strong> Porquê o Hack Lab? </strong>
+          Num mundo cada vez mais digital, 
+          acreditamos que os jovens precisam de oportunidades para aplicar os seus talentos de forma prática e segura. O Hack Lab vem para abrir portas, 
+          revelar talentos escondidos e mostrar que há espaço para crescer, mesmo onde poucos acreditam.
+        </p>
+        <div class="about__btn">
+          <button class="btn">Download Regras</button>
+        </div>
+      </div>
+    </section>
+    
+<section id="premios" class="section-box">
+  <h2>🏆 Prémios do Concurso</h2>
+  <div class="prizes-grid">
+    <div class="prize-card">
+      <h3>🥇 1º Lugar</h3>
+      <p>Valor estimado 500.000KZ</p>
+    </div>
+    <div class="prize-card">
+      <h3>🥈 2º Lugar</h3>
+      <p>Valor estimado 350.000KZ</p>
+    </div>
+    <div class="prize-card">
+      <h3>🥉 3º Lugar</h3>
+      <p>Prémio por Participação</p>
+    </div>
+  </div>
+</section>
+
+    <section class="section__container service__container" id="service">
+      <h2 class="section__header">Regras da Competição</h2>
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="ri-window-fill"></i></span>
+          <h4>1. Participação individual</h4>
+          <p>
+            a)  A competição é individual. Não é permitido o trabalho em
+            equipe ou a colaboração com outros participantes.
+            <br>
+            b)  O compartilhamento de dicas ou soluções é estritamente
+            proibido.
+          </p>
+        </div>
+
+        <div class="service__card">
+          <span><i class="ri-smartphone-line"></i></span>
+          <h4>2. Ambiente de Competição</h4>
+          <p>
+            a) Os participantes deverão respeitar o ambiente e os servidores.
+            <br>
+            b) É proibido realizar qualquer tipo de ataque que cause
+                  interrupção do serviço, como DDoS ou DoS.
+            <br>
+            c) Não é permitido modificar, deletar ou alterar flags ou qualquer
+                  outro arquivo do ambiente.
+
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-share-circle-line"></i></span>
+          <h4>3.Escopo</h4>
+          <p>
+          
+              <b> CLIENТЕ </b> - ANS ANSALBERT.COM <br>
+              <b>TIPO DE PENTEST </b> - PENTEST INTERNO <br>
+              <b>OBJETIVO </b> - AVALIAR A SEGURANÇA PELA PRESPECTIVA 
+                                 DE UM ÚSUARIO CONECTADO A REDE INTERNA.<br>
+              <b> ESCOPО </b> - HOSTS DO DOMINIO LOCAL <br>
+              <b>REDE</b> 10.10.1.0   <b>HOSTS PENTCENTER</b>
+                                          172.168.1.О <br>
+              <b>USUÁRIO:</b> pentester SENHA: root. <br>
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="section__container portfolio__container" id="portfolio">
+      <h2 class="section__header">Hacking lab</h2>
+      <p class="section__description">
+        Explore a showcase of my diverse projects, demonstrating my skills in
+        web development, design, and beyond. Each project reflects my passion
+        for creating impactful and innovative digital experiences.
+      </p>
+      <div class="portfolio__grid">
+        <div class="portfolio__card">
+          <img src="assets/project-1.jpg" alt="portfolio" />
+        </div>
+        
+        <div class="portfolio__card">
+          <img src="assets/project-2.jpg" alt="portfolio" />
+        </div>
+       
+        <div class="portfolio__card">
+          <img src="assets/project-6.jpg" alt="portfolio" />
+        </div>
+      </div>
+    </section>
+
+
+
+<section id="requisitos" class="section-box">
+  <h2> Requisitos de Participação</h2>
+  <div class="requirements-grid">
+    <div class="req-card">Ser estudante do ensino médio ou superior</div>
+    <div class="req-card">Ter interesse em segurança digital</div>
+    <div class="req-card">Acesso a um computador ou smartphone</div>
+    <div class="req-card">Capacidade de seguir instruções e regras</div>
+    <div class="req-card">Preencher o formulário de inscrição</div>
+  </div>
+</section>
+
+<!-- Faixa de Inscrição -->
+<section id="inscricao" class="inscricao-section">
+  <div class="form-container">
+    <h2>INSCREVE-TE NO CONCURSO</h2>
+    <p>Clica no botão abaixo para preencher o formulário de inscrição.</p>
+    <a href="https://docs.google.com/forms/d/teu-link-aqui" target="_blank" class="inscricao-btn">
+      IR PARA O FORMULÁRIO
+    </a>
+  </div>
+</section>
+
+
+    <section class="section__container contact__container" id="contact">
+      <div class="logo">H</div>
+      <h2 class="section__header">Hacking Lab
+Prática!</h2>
+      <p class="section__description">
+        An open invitation to connect, and exploring collaborative opportunities
+        on my personal portfolio website.
+      </p>
+      <div class="contact__socials">
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="#"><i class="ri-linkedin-fill"></i></a>
+        <a href="#"><i class="ri-behance-fill"></i></a>
+        <a href="#"><i class="ri-dribbble-line"></i></a>
+        <a href="#"><i class="ri-pinterest-line"></i></a>
+      </div>
+    </section>
+    <footer class="footer">
+      Copyright © 2025 ansalberto. All rights reserved.
+    </footer>
+
+
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
